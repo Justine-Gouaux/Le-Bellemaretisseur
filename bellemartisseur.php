@@ -62,7 +62,7 @@ if (!empty($_GET['currency'])) {
                 <option value="GBP">Livre brittanique - &#163;</option>
                 <option value="INR">Roupie indienne - &#8377;</option>
                 <option value="CAD">Dollars canadiens - &#36;</option>
-                <option value="CHF">Frands suisses - CHF</option>
+                <option value="CHF">Francs suisses - CHF</option>
                 <option value="JPY">Yen japonais - &#165;</option>
                 <option value="SEK">Couronne suédoise - SEK</option>
                 <option value="RUB">Rouble russe - &#8381;</option>
