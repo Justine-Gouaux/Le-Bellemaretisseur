@@ -31,24 +31,18 @@ function getConvertedAmount($amount, $currency)
     return $convertedAmount;  
 }
 
-/*A creuser 
-
-$doc = new DOMDocument;
-
-$doc->validateOnParse = true;
-$doc->Load('bellemartisseur.php');
-
-$doc->getElementById('currency')->value;
-
- */
-
 $amount = 595;
 
 if (!empty($_GET['currency'])) {
     $currency = $_GET['currency'];
 
     $convertedAmount = getConvertedAmount($amount, $currency);
-}
+
+} else {
+    $currency = 'FR';
+
+    $convertedAmount = $amount;
+};
 
 ?>
 
@@ -74,7 +68,7 @@ if (!empty($_GET['currency'])) {
 
 </form>
  
-<p id="answer">Et bien ça fait <strong><?=' '.$convertedAmount.' '.$_GET['currency']?></strong> .</p>
+<p id="answer">Et bien ça fait <strong><?=' '.$convertedAmount.' '.$currency?></strong> .</p>
 
 </body>
 
